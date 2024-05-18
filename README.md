@@ -12,10 +12,18 @@ mainscreen.html, Line 14: Changed title to "My Gaming Setup Shop"
 mainscreen.html, Line 19: Changed h1 to say "Gaming Station Shop"
 <br>
 
-
-
-
 ## D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
+Added about.html to templates folder.
+mainscreen.html, Line 20: added link to about page
+about.html, Line 1-25: Added same formatting contents that are in mainscreen.html for similar styling and format.
+about.html, Line 14: Changed title to About
+about.html, Line 18: Created h1 header
+about.html, Line 19: added link to main page
+about.html, Line 20: added hr tag to create line under page header
+about.html, Line 21-22: Added description to about us paragraph.
+aboutController.java, Line 1-8: added package and imports 
+aboutController.java, Line 17: added controller class
+aboutController.java, Line 21: added GetMapping controller to return the about page
 
 
 ## E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
