@@ -7,30 +7,32 @@ FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFE
 ## C.  Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 Changes:
 <br>
-mainscreen.html, Line 14: Changed title to "My Gaming Setup Shop"
+mainscreen.html, Line 14: Changed title to "My Gaming Station Shop"
 <br>
-mainscreen.html, Line 19: Changed h1 to say "Gaming Station Shop"
+mainscreen.html, Line 19: Changed h1 to say "My Gaming Station Shop"
 <br>
 
 ## D.  Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
-Added about.html to templates folder.
-mainscreen.html, Line 20: added link to about page
-about.html, Line 1-25: Added same formatting contents that are in mainscreen.html for similar styling and format.
-about.html, Line 14: Changed title to About
-about.html, Line 18: Created h1 header
-about.html, Line 19: added link to main page
-about.html, Line 20: added hr tag to create line under page header
-about.html, Line 21-22: Added description to about us paragraph.
-aboutController.java, Line 1-8: added package and imports 
-aboutController.java, Line 17: added controller class
-aboutController.java, Line 21: added GetMapping controller to return the about page
+Added about.html to templates folder. <br>
+mainscreen.html, Line 20: added link to about page <br>
+about.html, Line 1-25: Added same formatting contents that are in mainscreen.html for similar styling and format. <br>
+about.html, Line 14: Changed title to About <br>
+about.html, Line 18: Created h1 header <br>
+about.html, Line 19: added link to main page <br>
+about.html, Line 20: added hr tag to create line under page header <br>
+about.html, Line 21-22: Added description to about us paragraph. <br>
+aboutController.java, Line 1-8: added package and imports  <br>
+aboutController.java, Line 17: added controller class <br>
+aboutController.java, Line 21: added GetMapping controller to return the about page <br>
 
 
 ## E.  Add a sample inventory appropriate for your chosen store to the application. You should have five parts and five products in your sample inventory and should not overwrite existing data in the database.
 
-
-Note: Make sure the sample inventory is added only when both the part and product lists are empty. When adding the sample inventory appropriate for the store, the inventory is stored in a set so duplicate items cannot be added to your products. When duplicate items are added, make a “multi-pack” part.
-
+BootStrapData.java, Line 63-110: uncommented sample code, and added products, inhouse parts, and outsourced parts to data. <br>
+BootStrapData.java, Line 111-122: added logic so that duplicate data does not get added every time program is run. <br>
+mainscreen.html, Line 14: Changed title to "My Lawn Care Shop" <br>
+mainscreen.html, Line 19: Changed h1 to say "My Lawn Care Shop" <br>
+about.html, Line 21-22: Changed description for about us paragraph to reflect new store. 
 
 ## F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 •  The “Buy Now” button must be next to the buttons that update and delete products. <br>
