@@ -31,6 +31,8 @@ public class AddProductController {
     private List<Part> theParts;
     private static Product product1;
     private Product product;
+    @Autowired
+    private ProductService productService;
 
     @GetMapping("/showFormAddProduct")
     public String showFormAddPart(Model theModel) {
@@ -125,6 +127,16 @@ public class AddProductController {
         productService.deleteById(theId);
 
         return "confirmationdeleteproduct";
+    }
+
+    @GetMapping("/buyNow")
+    public String buyNow(@RequestParam("productID") Long theId, Model theModel) {
+        boolean success = productService.buyProduct(theId);
+        if(success) {
+            return "confirmationbuyproduct";
+        } else {
+            return "failbuyproduct";
+        }
     }
 
     public AddProductController(PartService partService) {

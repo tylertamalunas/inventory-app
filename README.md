@@ -35,9 +35,19 @@ mainscreen.html, Line 19: Changed h1 to say "My Lawn Care Shop" <br>
 about.html, Line 21-22: Changed description for about us paragraph to reflect new store. 
 
 ## F.  Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
-•  The “Buy Now” button must be next to the buttons that update and delete products. <br>
-•  The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.<br>
-•  Display a message that indicates the success or failure of a purchase.
+
+mainscreen.html, Line 86-87: added buy now button. <br>
+
+Created new file confirmationbuyproduct.html, and copied contents from confirmationdeleteproduct.html <br>
+confirmationbuyproduct.html, Line 10: Changed message contents. <br>
+mainscreen.html, Line 86: Added "Buy Now" button. <br>
+AddProductController.java, Line 34-35:  added ProductService variable to class for use with buyNow method. <br>
+AddProductController.java, Line 131-142: Added buyNow controller.  <br>
+ProductService.java, Line 20: created buyProduct method. <br>
+ProductServiceImpl.java, Line 71-84: created buyProduct method and what it does. <br>
+Created failbuyproduct.html <br>
+
+
 
 
 ## G.  Modify the parts to track maximum and minimum inventory by doing the following:
