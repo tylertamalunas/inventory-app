@@ -73,3 +73,4 @@ No changes made, all tasks already work.
 PartTest.java, Line 160-194: Added 4 part tests for maxinv and mininv.
 
 ## J.  Remove the class files for any unused validators in order to clean your code.
+Removed class DeletePartValidator.java because it was not used anywhere.
