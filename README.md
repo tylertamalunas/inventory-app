@@ -51,11 +51,18 @@ Created failbuyproduct.html <br>
 
 
 ## G.  Modify the parts to track maximum and minimum inventory by doing the following:
-•  Add additional fields to the part entity for maximum and minimum inventory.<br>
-•  Modify the sample inventory to include the maximum and minimum fields.<br>
-•  Add to the InhousePartForm and OutsourcedPartForm forms additional text inputs for the inventory so the user can set the maximum and minimum values.<br>
-•  Rename the file the persistent storage is saved to.<br>
-•  Modify the code to enforce that the inventory is between or at the minimum and maximum value.
+Part.java, Line 34-37: added maxInv and minInv variables. <br>
+Part.java, Line 60-70: Added getters and setters for minInv and maxInv. <br>
+BootStrapData.java, Line 69-109: Added minInv and maxInv setters for each part. <br>
+InhousePartForm.html, Line 24-28: Added field in form for minInv and maxInv. <br>
+OutsourcedPartForm.html, Line 25-29: Added field in form for minInv and maxInv. <br>
+Renamed DB file to old-spring-boot-db in application.properties file, and the file itself. <br>
+Part.java, line 116-117: Created method isValidInv() to check if part inventory is between max and min allowed values. <br>
+mainscreen.html, line 49-50: added min and max values to table. <br>
+Created ValidMaxParts.java annotation file and MaxPartsValidator.java for max inventory validation. <br>
+Created ValidMinParts.java annotation file and MinPartsValidator.java for min inventory validation. <br>
+AddInhousePartController.java line 43-48: added error handling to keep inv between min and max. <br>
+AddOutsourcedPartController.java line 43-48: added error handling to keep inv between min and max.
 
 
 ## H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:

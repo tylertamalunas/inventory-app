@@ -66,6 +66,8 @@ public class BootStrapData implements CommandLineRunner {
         wheel.setInv(40);
         wheel.setPrice(5.0);
         wheel.setId(10L);
+        wheel.setMaxInv(80);
+        wheel.setMinInv(4);
 
         OutsourcedPart blade = new OutsourcedPart();
         blade.setCompanyName("WGU");
@@ -73,6 +75,8 @@ public class BootStrapData implements CommandLineRunner {
         blade.setInv(10);
         blade.setPrice(50.0);
         blade.setId(11L);
+        blade.setMaxInv(20);
+        blade.setMinInv(1);
 
         OutsourcedPart seat = new OutsourcedPart();
         seat.setCompanyName("WGU");
@@ -80,6 +84,8 @@ public class BootStrapData implements CommandLineRunner {
         seat.setInv(10);
         seat.setPrice(25.0);
         seat.setId(12L);
+        seat.setMaxInv(20);
+        seat.setMinInv(1);
 
         List<OutsourcedPart> outsourcedParts=(List<OutsourcedPart>) outsourcedPartRepository.findAll();
         for(OutsourcedPart part:outsourcedParts){
@@ -91,12 +97,16 @@ public class BootStrapData implements CommandLineRunner {
         throttle.setInv(10);
         throttle.setPrice(30.0);
         throttle.setId(20L);
+        throttle.setMaxInv(20);
+        throttle.setMinInv(1);
 
         InhousePart clippingsCollector = new InhousePart();
         clippingsCollector.setName("Clippings collector");
         clippingsCollector.setInv(10);
         clippingsCollector.setPrice(25.0);
         clippingsCollector.setId(21L);
+        clippingsCollector.setMaxInv(20);
+        clippingsCollector.setMinInv(1);
 
         List<InhousePart> inhouseParts=(List<InhousePart>) inhousePartRepository.findAll();
         for(InhousePart part:inhouseParts){
