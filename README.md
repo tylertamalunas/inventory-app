@@ -66,10 +66,8 @@ AddOutsourcedPartController.java line 43-48: added error handling to keep inv be
 
 
 ## H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
-•  Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.<br>
-•  Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.<br>
-•  Display error messages when adding and updating parts if the inventory is greater than the maximum.<br>
 
+No changes made, all tasks already work. 
 
 ## I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
