@@ -70,6 +70,6 @@ AddOutsourcedPartController.java line 43-48: added error handling to keep inv be
 No changes made, all tasks already work. 
 
 ## I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
-
+PartTest.java, Line 160-194: Added 4 part tests for maxinv and mininv.
 
 ## J.  Remove the class files for any unused validators in order to clean your code.
