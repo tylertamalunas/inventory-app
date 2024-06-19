@@ -67,7 +67,10 @@ AddOutsourcedPartController.java line 43-48: added error handling to keep inv be
 
 ## H.  Add validation for between or at the maximum and minimum fields. The validation must include the following:
 
-No changes made, all tasks already work. 
+confirmationbuyproduct.html, line 6: changed refresh action to occur after 15 seconds. <br>
+failbuyproduct.html, line 6: changed refresh action to occur after 15 seconds. <br>
+enufPartsValidator.java, line 36: change if statement to check if part inv is less than minInv. <br>
+enufPartsValidator.java, line 37-40: added error message when trying to update product results in min part inventory limit being breached.
 
 ## I.  Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 PartTest.java, Line 160-194: Added 4 part tests for maxinv and mininv.
